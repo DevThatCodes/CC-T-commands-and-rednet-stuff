@@ -18,8 +18,8 @@ if needToDel == 1 then
     shell.run("delete ", fileName)
 end
 
-print({}, "wget", url)
-shell.run({}, "wget", url)
+print("wget", url)
+shell.run("wget", url)
 
-print({}, "rename", mysplit(mysplit(url, "/")[4], "?")[0], fileName)
-shell.run({}, "rename", mysplit(mysplit(url, "/")[4], "?")[0], fileName)
+print("rename", mysplit(mysplit(url, "/")[4], "?")[0], fileName)
+shell.run("rename", mysplit(mysplit(url, "/")[4], "?")[0], fileName)
