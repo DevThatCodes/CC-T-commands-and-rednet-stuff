@@ -18,5 +18,9 @@ end
 if needToDel == 1 then
     os.run("delete ".. fileName)
 end
+
+print("wget ".. url)
 os.run("wget ".. url)
+
+print("rename".. mysplit(mysplit(url, "/")[4], "?")[0], fileName)
 os.run("rename".. mysplit(mysplit(url, "/")[4], "?")[0], fileName)
