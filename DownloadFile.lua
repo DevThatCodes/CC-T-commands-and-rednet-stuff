@@ -15,7 +15,7 @@ function mysplit (inputstr, sep)
     return t
 end
 
-if needToDel == 1 then
+if needToDel == "1" then
     shell.run("delete ", fileName)
 end
 
