@@ -1,7 +1,8 @@
 local params = {...}
-local fileName = params[0]
+print(params)
+local fileName = params[2]
 local url = params[1]
-local needToDel = params[2]
+local needToDel = params[3]
 
 function mysplit (inputstr, sep)
     if sep == nil then
